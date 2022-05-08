@@ -28,5 +28,5 @@ We hope to improve the UI of our bot to be more game-like and also add more mini
 # How to use
 
 ![image](https://user-images.githubusercontent.com/66497192/167303596-2640e4c2-b197-4eae-bd94-2d5d68e17f22.png)
-Get your discord bot token and put it inside the SECRET.py file
+Get your discord bot token and put it inside the SECRET.py file <br />
 Run the code and it should be good to go :thumbsup:
