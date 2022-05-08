@@ -5,8 +5,12 @@ import requests
 import asyncio
 
 
+
 bot = commands.Bot(command_prefix="!")
 
+@bot.event
+async def on_ready():
+    print("The bot is ready")  
 
 def get_question():
     qs = ''
@@ -44,14 +48,13 @@ async def on_message(message):
         try:
             guess = await bot.wait_for('message', check=check, timeout=120.0)
         except asyncio.TimeoutError:
-            return await message.channel.send("You took so long")
+            return await message.channel.send("You took so long. The answer is " + str(answer))
+
         if int(guess.content) == answer:
             await message.channel.send("You are correct!")
-
         else:
-            await message.channel.send("Sorry, you are wrong!")
+            await message.channel.send("Sorry, you are wrong. The answer is " + str(answer))
 
 
 
-
-bot.run("OTcxOTA5ODMxMjI3MjI0MTU0.YnRXkA.u_yaiv_jY5h-IxCtcym7ZtXJxMo")
+bot.run("OTcyMjg2NjAwNDY3ODUzMzky.GALZzq.zqJoClAi8D7KXDQ1mm-j_c3MthiQv8UQ-puyCs")
