@@ -1,3 +1,4 @@
+from SECRET import token
 import nextcord, time
 from nextcord import Interaction
 from nextcord.ext import commands
@@ -403,5 +404,5 @@ async def start(ctx):
     else:
         print("Cancelled")
 
-bot.run("OTcyMjg2NjAwNDY3ODUzMzky.GALZzq.zqJoClAi8D7KXDQ1mm-j_c3MthiQv8UQ-puyCs")
+bot.run(token)
 
