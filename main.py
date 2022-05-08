@@ -1,4 +1,4 @@
-
+from SECRET import token
 import json
 from nextcord.ext import commands
 import requests
@@ -57,4 +57,4 @@ async def on_message(message):
 
 
 
-bot.run("OTcyMjg2NjAwNDY3ODUzMzky.GALZzq.zqJoClAi8D7KXDQ1mm-j_c3MthiQv8UQ-puyCs")
+bot.run(token)
